@@ -8,3 +8,4 @@ This repo contains my dot files and scripts I write to make my life easy.
 * zsh
 * awesome
 * tmux
+* kb layout
