@@ -12,13 +12,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Install plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Copy over config
 cd $ditdot/zsh
-cp .* $HOME
-cp agnoster.zsh-theme ~/.oh-my-zsh/themes/
+cp .zsh_history $HOME
+cp .zshrc $HOME
+cp agnoster.zsh-theme $HOME/.oh-my-zsh/themes/
 
 # Change shell
 chsh -s $(which zsh)

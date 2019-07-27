@@ -42,7 +42,7 @@ DISABLE_UPDATE_PROMPT="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -69,26 +69,29 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git 
-	extract 
-	web-search 
-	yum 
-	git-extras 
-	docker 
-	vagrant 
-	colored-man-pages 
-	colorize 
-	common-aliases 
-	npm 
-	npx 
-	nvm 
-	node 
-	ng 
-	python 
-	sudo 
-	zsh-autosuggestions 
+    colored-man-pages
+    colorize
+    command-not-found
+    common-aliases
+    debian
+    docker
+    encode64
+    extract
+	git
+    git-extras
+    ng node npm
+    per-directory-history
+    python
+    sudo
+    vagrant
+    wd
+	web-search
+    yarn
+	zsh-autosuggestions
 	zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
+
+autoload -U compinit && compinit
 
 # User configuration
 
@@ -115,3 +118,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+zstyle :completion::complete:-command-:: tag-order local-directories .
+setopt autocd
+
