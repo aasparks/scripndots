@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /cryptopals/cryptopals-py
+ls -la
+

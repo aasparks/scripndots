@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /NODUS/nodus-web-api
+ls -la
+

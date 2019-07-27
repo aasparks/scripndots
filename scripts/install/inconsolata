@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo apt-get install fonts-inconsolata
+fc-cache -f -v
+
