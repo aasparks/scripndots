@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+DITDOT="$(pwd)/../.."
+AWESOME="$(HOME)/.config/awesome"
+
+# Get the awesome-pro theme
+git clone --recursive https://github.com/lcpz/awesome-copycats.git
+mv -bv awesome-copycats/* ~/.config/awesome && rm -rf awesome-copycats
+
+cp $DITDOT/awesome/rc.lua $AWESOME/rc.lua
+cp $DITDOT/awesome/theme-personal.lua $AWESOME/themes/powerarrow/theme-personal.lua
+cp $DITDOT/awesome/wall.png $AWESOME/themes/powerarrow/wall.png
