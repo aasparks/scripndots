@@ -1,12 +1,13 @@
 #!/bin/sh
 
 set -e
-set -x
+#set -x
 
 DITDOT="$(pwd)/../.."
 AWESOME="$HOME/.config/awesome"
 
 # Get the awesome-pro theme
+rm -rf $AWESOME
 git clone --recursive https://github.com/lcpz/awesome-copycats.git
 mkdir -p $AWESOME
 mv -bv awesome-copycats/* $AWESOME/ 

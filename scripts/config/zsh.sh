@@ -1,25 +1,26 @@
 #!/bin/sh
 
 set -e
-set -x
 ditdot="$(pwd)/../.."
 
 # Needed for most themes
 sudo apt-get install -y fonts-powerline
 
+rm -rf $HOME/.oh-my-zsh
+rm -rf $HOME/.zsh*
+
 # Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Install plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Copy over config
-cd $ditdot/zsh
-cp .zsh_history $HOME
-cp .zshrc $HOME
-cp agnoster.zsh-theme $HOME/.oh-my-zsh/themes/
+cp $ditdot/zsh/.zsh_history $HOME
+cp $ditdot/zsh/.zshrc $HOME
+cp $ditdot/zsh/agnoster.zsh-theme $HOME/.oh-my-zsh/themes/
 
 # Change shell
-chsh -s $(which zsh)
+chsh -s /usr/bin/zsh
 
