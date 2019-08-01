@@ -229,7 +229,7 @@ screen.connect_signal("arrange", function (s)
 end)
 -- Create a wibox for each screen and add it
 awful.screen.connect_for_each_screen(function(s) 
-   beautiful.at_screen_connect(s) 
+   beautiful.at_screen_connect(s)
 end)
 -- }}}
 
@@ -653,7 +653,8 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- possible workaround for tag preservation when switching back to default screen:
 -- https://github.com/lcpz/awesome-copycats/issues/251
 -- }}}
+
+-- For the desktop. Affects nothing if DP-3 doesn't exist.
 awful.util.spawn('xrandr --output DP-3 --rotate left')
 
-awful.util.spawn('nm-applet')
-awful.util.spawn('guake')
+awful.util.spawn('google-chrome-stable')
