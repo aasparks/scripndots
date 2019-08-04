@@ -15,7 +15,7 @@ rm -rf awesome-copycats
 
 cp $DITDOT/awesome/rc.lua $AWESOME/rc.lua
 cp $DITDOT/awesome/theme-personal.lua $AWESOME/themes/multicolor/theme-personal.lua
-cp $DITDOT/awesome/wall.png $AWESOME/themes/powerarrow/wall.png
+cp $DITDOT/awesome/wall.png $AWESOME/themes/multicolor/wall.png
 
 echo "==========================================="
 echo "==========================================="

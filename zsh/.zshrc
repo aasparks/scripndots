@@ -118,7 +118,7 @@ autoload -U compinit && compinit
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias emacs="emacs -nw"
 zstyle :completion::complete:-command-:: tag-order local-directories .
 setopt autocd
 
