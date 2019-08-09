@@ -30,8 +30,7 @@ or configure.
 * Dvorak keyboard layout
 * My aliases
 
-##TODO:
+## TODO:
 
-* spacemacs
+* remove dumb folder abstractions. put everything in a folder named after the program.
 * tmux
-* kb layout
