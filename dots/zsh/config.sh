@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -e
-ditdot="$(pwd)/../.."
 
 rm -rf $HOME/.oh-my-zsh
 rm -rf $HOME/.zsh*
@@ -14,8 +13,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Copy over config
-cp $ditdot/zsh/.zsh_history $HOME
-cp $ditdot/zsh/.zshrc $HOME
+cp .zsh_history $HOME
+cp .zshrc $HOME
 
 # Change shell
 chsh -s /usr/bin/zsh

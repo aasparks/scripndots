@@ -4,33 +4,33 @@ This repo contains my dot files and scripts I write to make my life easy.
 
 ## Usage
 
-The easiest way to use this repo is to run
-```./install```
+The scripts directory contains scripts that automate bringing a fresh install up 
+to working condition. They install programs I use regularly and replace some system
+settings that I use as well.
 
-from the root directory. This will prompt you to install
-individual programs. To install and configure everything,
-run the script with
-```./install -y```.
+The dots directory contains the dotfiles and installers for all the programs I use
+that have dotfiles. 
 
-To install and confiure modules individually, cd into
-```scripts/config``` or ```scripts/install``` and run
-the script named after the program you want to install
-or configure.
-
-## Programs
+### Dotfile Programs
 
 * awesome Window Manager
 * zsh
-* nodejs
 * spacemacs
 
 ## Other Installs
 
 * Inconsolata Font
-* Dvorak keyboard layout
-* My aliases
+* Dvorak keyboard layout with switching to regular US with LCTRL + RCTRL. Also swaps the caps lock and esc keys for vim 
+use.
+* Fix-alsa.sh. I needed to do this on one of my machines.
+It's there for reference.
+* Racket lang and DrRacket
+* Sonic-lambda, my sonic-pi remake
+* NodeJS
+* Keypass
 
 ## TODO:
 
-* remove dumb folder abstractions. put everything in a folder named after the program.
 * tmux
+
+

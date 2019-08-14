@@ -1,9 +1,7 @@
 #!/bin/sh
 
 set -e
-#set -x
 
-DITDOT="$(pwd)/../.."
 AWESOME="$HOME/.config/awesome"
 
 # Get the awesome-pro theme
@@ -13,9 +11,9 @@ mkdir -p $AWESOME
 mv -bv awesome-copycats/* $AWESOME/ 
 rm -rf awesome-copycats
 
-cp $DITDOT/awesome/rc.lua $AWESOME/rc.lua
-cp $DITDOT/awesome/theme-personal.lua $AWESOME/themes/multicolor/theme-personal.lua
-cp $DITDOT/awesome/wall.png $AWESOME/themes/multicolor/wall.png
+cp rc.lua $AWESOME/rc.lua
+cp theme-personal.lua $AWESOME/themes/multicolor/theme-personal.lua
+cp wall.png $AWESOME/themes/multicolor/wall.png
 
 echo "==========================================="
 echo "==========================================="
