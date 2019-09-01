@@ -6,8 +6,6 @@ git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-t
 ./autogen.sh --prefix=/usr
 sudo make install
 
-git@github.com:streetturtle/awesome-wm-widgets.git ~/.config/awesome/wallpaper.jpg/
-
 # Lua stuff
 sudo apt install shellcheck luacheck lua5.3 luarocks
 sudo luarocks install luacheck
