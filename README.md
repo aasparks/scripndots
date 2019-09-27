@@ -15,7 +15,7 @@ that have dotfiles.
 
 * awesome Window Manager
 * zsh
-* spacemacs
+* doom emacs
 
 ## Other Installs
 
@@ -26,8 +26,6 @@ use.
 It's there for reference.
 * Racket lang and DrRacket
 * Sonic-lambda, my sonic-pi remake
-* NodeJS
-* Keypass
 
 ## TODO:
 
