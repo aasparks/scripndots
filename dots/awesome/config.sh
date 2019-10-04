@@ -14,6 +14,6 @@ sudo ./fix-backlight.sh
 
 rm -rf "$AWESOME/awesome-wm-widgets"
 git clone https://github.com/streetturtle/awesome-wm-widgets.git "$AWESOME/awesome-wm-widgets"
-cd $AWESOME/awesome-wm-widgets"
+cd "$AWESOME/awesome-wm-widgets"
 git checkout 4.2-human-after-all
 
