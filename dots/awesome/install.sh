@@ -4,10 +4,11 @@ set -e
 
 sudo apt install -y awesome ofono acpi dh-autoreconf xbacklight
 
-git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme
+git clone https://github.com/horst3180/arc-icon-theme --depth 1
+cd arc-icon-theme
 ./autogen.sh --prefix=/usr
 sudo make install
-
+cd ..
 rm -rf arc-icon-theme
 
 # Lua stuff
