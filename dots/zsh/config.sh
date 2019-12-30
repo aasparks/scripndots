@@ -2,6 +2,8 @@
 
 set -e
 
+HERE=$(dirname $0)
+
 rm -rf $HOME/.oh-my-zsh
 rm -rf $HOME/.zsh*
 
@@ -13,7 +15,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Copy over config
-cp .zshrc $HOME
+cp $HERE/.zshrc $HOME
 
 # Change shell
 chsh -s /usr/bin/zsh

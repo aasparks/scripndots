@@ -3,14 +3,15 @@
 set -e
 
 AWESOME="$HOME/.config/awesome"
+HERE=$(dirname $0)
 
 # Copy config files over
 rm -rf "$AWESOME"
 mkdir -p "$AWESOME"
-cp -rf ./cfg/* "$AWESOME/"
+cp -rf $HERE/cfg/* "$AWESOME/"
 
 # Fix brightness buttons
-sudo ./fix-backlight.sh
+sudo $HERE/fix-backlight.sh
 
 rm -rf "$AWESOME/awesome-wm-widgets"
 git clone https://github.com/streetturtle/awesome-wm-widgets.git "$AWESOME/awesome-wm-widgets"
