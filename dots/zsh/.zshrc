@@ -121,4 +121,4 @@ autoload -U compinit && compinit
 alias emacs="emacs -nw"
 zstyle :completion::complete:-command-:: tag-order local-directories .
 setopt autocd
-
+setopt +o nomatch
