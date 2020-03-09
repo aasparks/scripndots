@@ -7,3 +7,5 @@
 
 (setq doom-theme 'doom-outrun-electric)
 (setq doom-font (font-spec :family "Inconsolata" :size 21))
+
+(add-hook! 'rjsx-mode-hook 'prettier-js-mode)
