@@ -20,6 +20,6 @@ pip3 install nose pytest isort pipenv
 
 echo "Installing doom emacs"
 cp "$HERE"/dots/doom.d ~/.doom.d
-git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 ~./emacs.d/bin/doom doctor
