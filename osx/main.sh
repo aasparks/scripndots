@@ -12,5 +12,6 @@ xargs brew install --cask < brew-cask.txt
 
 $HERE/zsh.sh
 
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
-
+$HERE/git.sh
+#Stop DS_Store
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true

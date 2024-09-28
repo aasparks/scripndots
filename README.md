@@ -1,3 +1,4 @@
+
 # Scripndots
 
 This repo contains my dot files and scripts I write to make my life easy.
@@ -7,31 +8,31 @@ This repo contains my dot files and scripts I write to make my life easy.
 - Nvim chad
 - Download Git repos
 
-|Task            | Win10  | OSX | Linux |
-|----------------|--------|-----|-------|
-|Chrome          | [x]    | [x] |       |
-|Firefox         | [x]    | [x] |       |
-|7zip            | [x]    | []  |       |
-|VLC             | [x]    | [x] |       |
-|ZSH             | []     | [x] |       |
-|Surfshark       | []     | [x] |       |
-|Stable Diffusion| []     | []  |       |
-|GDrive          | [x]    | [x] |       |
-|QBittorrent     | [x]    | [x] |       |
-|Winrar          | [x]    | [x] |       |
-|AdGuard         | [x]    | [x] |       |
-|SideQuest       | [x]    | [x] |       |
-|Oculus          | []     | []  |       |
-|Steam           | [x]    | [x] |       |
-|Geforce         | [x]    | []  |       |
-|Geforce Driver  | [x]    | []  |       |
-|Vortex          | [x]    | []  |       |
-|Git             | [x]    | [x] |       |
-|DotNet          | [x]    | []  |       |
-|Python          | [x]    | [x] |       |
-|Neovim          | [x]    | [x] |       |
-|VSCode          | [x]    | [x] |       |
-|Racket          | [x]    | [x] |       |
-|LibreOffice     | [x]    | [x] |       |
-|Clone Repos     | []     | [x] |       |
-|iTerm2          | []     | [x] |       |
+|Task            | Win10                 | OSX                | Linux |
+|----------------|-----------------------|--------------------|-------|
+|Chrome          | :white_check_mark:    | :white_check_mark: |       |
+|Firefox         | :white_check_mark:    | :white_check_mark: |       |
+|7zip            | :white_check_mark:    | :black_circle:     |       |
+|VLC             | :white_check_mark:    | :white_check_mark: |       |
+|ZSH             | :black_circle:        | :white_check_mark: |       |
+|Surfshark       | :x:                   | :white_check_mark: |       |
+|Stable Diffusion| :white_check_mark:    | :white_check_mark: |       |
+|GDrive          | :white_check_mark:    | :white_check_mark: |       |
+|QBittorrent     | :white_check_mark:    | :white_check_mark: |       |
+|Winrar          | :white_check_mark:    | :white_check_mark: |       |
+|AdGuard         | :white_check_mark:    | :white_check_mark: |       |
+|SideQuest       | :white_check_mark:    | :white_check_mark: |       |
+|Oculus          | :x:                   | :black_circle:     |       |
+|Steam           | :white_check_mark:    | :white_check_mark: |       |
+|Geforce         | :white_check_mark:    | :black_circle:     |       |
+|Geforce Driver  | :white_check_mark:    | :black_circle:     |       |
+|Vortex          | :white_check_mark:    | :black_circle:     |       |
+|Git             | :white_check_mark:    | :white_check_mark: |       |
+|DotNet          | :white_check_mark:    | :black_circle:     |       |
+|Python          | :white_check_mark:    | :white_check_mark: |       |
+|Neovim          | :white_check_mark:    | :white_check_mark: |       |
+|VSCode          | :white_check_mark:    | :white_check_mark: |       |
+|Racket          | :white_check_mark:    | :white_check_mark: |       |
+|LibreOffice     | :white_check_mark:    | :white_check_mark: |       |
+|Clone Repos     | :x:                   | :white_check_mark: |       |
+|iTerm2          | :black_circle:        | :white_check_mark: |       |
