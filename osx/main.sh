@@ -13,5 +13,12 @@ xargs brew install --cask < brew-cask.txt
 $HERE/zsh.sh
 
 $HERE/git.sh
-#Stop DS_Store
+
+# Stop DS_Store
+find ~ -name '.DS_Store' -type f -delete
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+# Set default folder view
+defaults write com.apple.Finder FXPreferredViewStyle icnv|Nlsv|clmv|Flwv
+# Restart finder
+killall Finder
