@@ -11,11 +11,11 @@ REPOS=$(scripndots cryptopals-py-rkt sonic-pi)
 # NvChad TODO - where?
 git clone https://github.com/NvChad/NvChad $HOME/.config/nvim --depth 1
 # Stable diffusion
-git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git $HOME/projects
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git $HOME/projects/stable-diffusion
 
 # My projects
 for item in $REPOS 
-  git clone https://github.com/aasparks/$item $HOME/projects/
+  git clone https://github.com/aasparks/$item $HOME/projects/$item
 done
 
 

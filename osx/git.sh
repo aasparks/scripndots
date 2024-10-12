@@ -7,13 +7,15 @@ HERE=$(dirname "$0")
 
 REPOS=$(scripndots cryptopals-py-rkt sonic-pi)
 
-# NvChad
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
-# Stable diffusion
+# Install NvChad
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+
+# Install Stable Diffusion Web UI
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git ~/projects
 
 # My projects
 for item in $REPOS 
-  git clone https://github.com/aasparks/$item ~/projects/
+  git clone https://github.com/aasparks/$item ~/projects/$item
 done
 
+nvim

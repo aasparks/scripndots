@@ -22,3 +22,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 defaults write com.apple.Finder FXPreferredViewStyle icnv|Nlsv|clmv|Flwv
 # Restart finder
 killall Finder
+
+# Install Stable Diffusion Web UI
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git $HOME/projects
+
