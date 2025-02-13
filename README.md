@@ -1,11 +1,11 @@
 
 # Scripndots
 
-This repo contains my dot files and scripts I write to make my life easy.
+This repo contains dot files and scripts to make my life easy.
 
 # TODO:
 - Linux setup
-- Nvim chad
+- Nvim
 - Download Git repos
 
 |Task            | Win10                 | OSX                | Linux |
