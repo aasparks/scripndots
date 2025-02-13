@@ -1,0 +1,7 @@
+coreutils
+fontconfig
+freetype
+git
+jupyterlab
+neovim
+python3
