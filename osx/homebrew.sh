@@ -8,3 +8,6 @@ set -e
 # Config - sometimes this fails in the script but succeeds after exit
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$($(which brew) shellenv)"
+
+xargs brew install < brew.txt
+xargs brew install --cask < brew-cask.txt

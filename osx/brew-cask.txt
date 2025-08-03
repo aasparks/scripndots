@@ -3,13 +3,11 @@ visual-studio-code
 google-chrome
 firefox
 vlc
-surfshark
 google-drive
 qbittorrent
 rar
-adguard
 sidequest
 steam
 racket
 libreoffice
-
+protonvpn

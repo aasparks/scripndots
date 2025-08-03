@@ -7,22 +7,15 @@ HERE=$(dirname "$0")
 
 $HERE/homebrew.sh
 
-xargs brew install < brew.txt
-xargs brew install --cask < brew-cask.txt
-
 $HERE/zsh.sh
 
 $HERE/git.sh
 
-# Stop DS_Store
-find ~ -name '.DS_Store' -type f -delete
+# Attempt to delete all DS_Store files and prevent writing new ones
+find ~ -name '.DS_Store' -type f -delete || true
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
-# Set default folder view
-defaults write com.apple.Finder FXPreferredViewStyle icnv|Nlsv|clmv|Flwv
+# Set default folder view to list
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Restart finder
 killall Finder
-
-# Install Stable Diffusion Web UI
-git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git $HOME/projects
-
