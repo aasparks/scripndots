@@ -9,7 +9,7 @@ REPOS="scripndots cryptopals-py-rkt sonic-pi"
 
 # Install NvChad
 rm -rf ~/.config/nvim
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+git clone https://github.com/NvChad/starter ~/.config/nvim
 
 # Install Stable Diffusion Web UI
 rm -rf ~/projects/stable-diffusion
@@ -20,3 +20,6 @@ for item in $REPOS; do
   rm -rf ~/projects/$item
   git clone https://github.com/aasparks/$item ~/projects/$item
 done
+
+echo "Open nvim and run :MasonInstallAll"
+
